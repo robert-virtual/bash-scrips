@@ -1,0 +1,11 @@
+
+#!/bin/bash
+
+# -z VAR = retorna true si la variable esta vacia
+
+if [ -z $1 ]; then
+    echo "no proveyo el parametro requerido"
+    return
+fi
+
+echo $1

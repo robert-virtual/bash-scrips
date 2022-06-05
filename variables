@@ -1,0 +1,6 @@
+#!/bin/bash
+
+myvariable="Hola Mundo\nhola\nmundo"
+
+
+echo $myvariable 

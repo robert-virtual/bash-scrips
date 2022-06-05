@@ -1,0 +1,24 @@
+#!/bin/bash
+
+frutas=(manzana pera banano mango)
+
+for fruta in ${frutas[@]}; do
+    echo fruta: $fruta
+done
+
+
+printf "\nfor range\n\n"
+
+
+for i in {0..10}; do
+    echo n: $i
+done
+
+
+
+
+echo incrementar de dos en dos
+
+for i in {0..10..2}; do
+    echo n: $i
+done

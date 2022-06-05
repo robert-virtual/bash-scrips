@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+#myarray=("manzana" "pera" "banano" "mango")
+
+#echo "Array: $myarray"
+
+myarray=(manzana pera banano mango)
+
+echo Array: ${myarray[@]}
+
+echo Banano: ${myarray[2]}
+
+printf "\nrenombrar banano a Banano\n"
+
+myarray[2]=Banano
+
+echo Banano: ${myarray[2]}
+
+printf "\nAgregar elemento a el array\n"
+
+myarray[4]=Guallaba
+
+echo Array: ${myarray[@]}
+
+printf "\nEliminar elemento a el array\n"
+
+unset myarray[4]
+
+echo Array: ${myarray[@]}
