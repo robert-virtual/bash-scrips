@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo -n "Ingrese un numero:"
+
+read var1
+
+output="Hola Mundo"
+
+if [ -n $1 ]; then
+    output=$1
+fi
+
+
+#for i in {0..5}; do 
+    #printf "\n$output"
+#done
+
+for ((i = 0; i <= $var1; i++)); do
+    echo $i
+done

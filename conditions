@@ -1,11 +1,46 @@
-
 #!/bin/bash
 
 # -z VAR = retorna true si la variable esta vacia
+# var1 -gt var2 = retorna true si var1 es mayor a var2
+var=11
+var2=10
+var3=10
 
-if [ -z $1 ]; then
-    echo "no proveyo el parametro requerido"
-    return
+if [ $var -gt $var2 ]; then
+    printf "\n $var es mayor que $var2 (-gt)\n"
 fi
 
-echo $1
+if [ $var2 -eq $var3 ]; then
+    printf "\n $var2 es igual a $var3 (-eq)\n"
+fi
+
+if [ $var2 = $var3 ]; then
+    printf "\n $var2 es igual a $var3 (=)\n"
+fi
+
+if [ $var2 != $var ]; then
+    printf "\n $var2 es diferente de $var (!=)\n"
+fi
+
+if [ $var2 -ge $var ]; then
+    printf "\n $var2 es mayor o igual a $var (ge)\n"
+fi
+
+if [ $var2 -eq $var3 ] && [ $var2 != $var ]; then
+    printf "\n $var2 es igual a $var3 y $var2 es diferente de $var (&&)\n"
+fi
+
+if [ $var -gt $var3 ] || [ false ]; then
+    printf "\n Operacion || dio a true \n"
+fi
+
+if [ -n $var ]; then
+    printf "\n $var es mayor a 0 (-n)\n"
+fi
+
+if [ -z $1 ]; then
+    printf "\n no proveyo el parametro requerido (-z)[vacio]\n"
+else
+    echo $1
+fi
+

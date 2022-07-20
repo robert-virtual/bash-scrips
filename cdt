@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+path=$(find ~/Documents ~/Documents/**/ /var/www/**/ -mindepth 1 -maxdepth 1 -type d | fzf)
+
+if [ -z $path ]; then
+    return
+fi
+
+cd $path

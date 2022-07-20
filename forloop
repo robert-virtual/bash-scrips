@@ -1,6 +1,6 @@
 #!/bin/bash
 
-frutas=(manzana pera banano mango)
+frutas=(manzana-hola.hola pera banano mango)
 
 for fruta in ${frutas[@]}; do
     echo fruta: $fruta
