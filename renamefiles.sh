@@ -5,7 +5,7 @@ if [ -z $1 ]; then
   exit 
 fi
 
-i=0
+i=1
 
 if [ -n $2 ]; then
   i=$2
